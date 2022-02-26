@@ -17,8 +17,11 @@ import java.time.LocalTime;
 public class PagoPrestamo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Integer id;
+
     @Column(name = "codigo_prestamo", nullable = false)
-    private Long id;
+    private Long codigoPrestamo;
 
     @Column(name = "valor_pago", nullable = false)
     private BigDecimal valorPago;
