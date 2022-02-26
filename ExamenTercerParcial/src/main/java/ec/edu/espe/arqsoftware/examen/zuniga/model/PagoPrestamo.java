@@ -23,7 +23,7 @@ public class PagoPrestamo {
     @Column(name = "codigo_prestamo", nullable = false)
     private Long codigoPrestamo;
 
-    @Column(name = "valor_pago", nullable = false)
+    @Column(name = "valor_pago", nullable = false, precision = 10, scale = 2)
     private BigDecimal valorPago;
 
     @Column(name = "fecha_pago", nullable = false)
